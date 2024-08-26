@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="form-group">
+    Code   <input type="text"  (input)="readCode($event)" >
+  </div>
+  <div class="form-group">
+    Company   <input type="text" (input)="readCode($event)">
+  </div>
+  <div class="form-group">
+    Launch Price  <input type="text" (input)="readLPrice($event)">
+  </div>
+  <div class="form-group">
+    Face Value   <input type="text" (input)="readFaceValue($event)">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary"   on-click="addHandler()">Add</button>
+  </div>
+</div>
+
+<div class="card border-5" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{s.code}}</h5>
+    <h4>{{s.initialPrice}}</h4>
+    <h4>{{s.faceValue }}</h4>
+    <a href="#" class="btn btn-primary">{{s.name}}</a>
+  </div>
+</div>
